@@ -95,6 +95,7 @@ class App extends Component {
         <div className="wrapper">
           <div className="projectDiv">
             <AddProject addProject={this.handleAddProject.bind(this)} />
+            <hr/>
             <Projects projects={this.state.projects} onDelete={this.handleDeleteProject.bind(this)} />
           </div>
           <Todos todos={this.state.todos} onDelete={this.handleDeleteTodo.bind(this)} />

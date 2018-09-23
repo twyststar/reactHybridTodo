@@ -18,10 +18,18 @@ body {
   padding-left: 5%;
 }
 
+.deleteBtn {
+  background-color: #ad3030;
+  color: white;
+  float: right;
+  
+}
 .wrapper {
+  padding: 2%;
   margin-top: 10%;
   display: grid;
   grid-template-columns: 30% 60%;
+  grid-gap: 2%;
 }
 
 .projectDiv {
@@ -30,5 +38,6 @@ body {
 }
 
 .todos {
-
+  padding-left: 2%;
+  border-left: 1px solid black;
 }
