@@ -3,6 +3,7 @@ import './App.css';
 import Projects from './Components/Projects';
 import AddProject from './Components/AddProject';
 import Todos from './Components/Todos';
+import Header from './Components/Header';
 import uuid from 'uuid';
 import $ from 'jquery';
 
@@ -89,13 +90,16 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div className="App">
-        <AddProject addProject={this.handleAddProject.bind(this)}/>
-        <Projects projects={this.state.projects} onDelete={this.handleDeleteProject.bind(this)}/>
-        <Todos todos={this.state.todos} onDelete={this.handleDeleteTodo.bind(this)} />
-      </div>
-    );
+    return <div className="App">
+        <Header />
+        <div className="wrapper">
+          <div className="projectDiv">
+            <AddProject addProject={this.handleAddProject.bind(this)} />
+            <Projects projects={this.state.projects} onDelete={this.handleDeleteProject.bind(this)} />
+          </div>
+          <Todos todos={this.state.todos} onDelete={this.handleDeleteTodo.bind(this)} />
+        </div>
+      </div>;
   }
 }
 

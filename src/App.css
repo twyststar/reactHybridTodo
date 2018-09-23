@@ -1,1 +1,34 @@
+body {
+  background-color: #c3c5cd;
+  padding: none;
+}
 
+.App {
+  
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  color: white;
+  padding-left: 5%;
+}
+
+.wrapper {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 30% 60%;
+}
+
+.projectDiv {
+  grid-column-start: 1;
+	grid-column-end:   2;
+}
+
+.todos {
+
+}

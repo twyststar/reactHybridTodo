@@ -34,7 +34,7 @@ class AddProject extends Component {
       return <option key={category} value={category}>{category}</option>
     })
     return (
-      <div >
+      <div className="projectForm">
         <h3>
           Add Project
         </h3>

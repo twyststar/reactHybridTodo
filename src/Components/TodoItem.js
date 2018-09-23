@@ -7,7 +7,7 @@ class TodoItem extends Component {
     this.props.onDelete(id)
   }
   render() {
-    return <li className="Todo">
+    return <li className="todoItem">
       <strong>{this.props.todo.title}</strong> - Completed: {this.props.todo.completed.toString()}
       <a href="#" onClick={this.deleteTodo.bind(this, this.props.todo.id)}>
         X
